@@ -3,17 +3,25 @@
 #include <iostream>
 using namespace std;
 
+// while working with variables ...
+#include <string>
+
+const double pi = 3.1415926;
+
+#define WORLD "Bob"
+
+
 int main()
 {
-	std::cout << "Well hello there! I'm the world!\n";
+	std::cout << "Well hello there! I'm the " << WORLD <<"!\n";
 	// or using the namespace ...
-	cout << "  - Hello to you World!\n";
+	cout << "  - Hello to you " << WORLD "!\n";
 	
 	// learning variables
 	bool state 		= true;
 	char letter 	= 'c';
 	int chiffre		= 42;
-	float pie		= 3.14159;
+	float pie		= 3.1416;
 	
 	// let's output these ...
 	cout << "I just learn new variables, here they are :\n";
@@ -40,5 +48,19 @@ int main()
 	cout << "Of course! your answer is : " << result - letter << "\n";
 	cout << "So, as you noticed already, '" << letter << "' is equal to : " << int(letter) << " !!\n";
 	
+	// funky ways of declaring variables!!
+	int a, b, c = 0;
+	int d (4);
+	/* seems to be pass 2011 content ... 
+	int e {5};
+	auto f = "test";
+	*/
+	string myString;
+	string hisString = "Whatever!";
+	
+	// constant
+	cout << "Hey! I just learn constant variables! Check this! pi is actually : " << pi << "\n";
+	cout << "  - You probably know the difference between a pie and the pi then\?!\n";
+	cout << "Pretty easy, the difference is : " << pie - pi << "\n";
 	
 }
